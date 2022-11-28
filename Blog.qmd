@@ -1,0 +1,45 @@
+---
+title: "Izar de Villasante"
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, reading-time, description, categories]
+  feed: true
+page-layout: full
+title-block-banner: fasle
+---
+
+
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+# Series
+
+##### [<F.A.I.R. series>](fair.html)
+This series contains a great deal of tips, tricks and packages 
+that you can use to take your data science to the next level with
+FAIR development practices.
+
+<!-- La paciència comença amb llàgrimes, i, a la fi, somriu. Ramon Llull (Ciutat de Mallorca, 1232/1233 -->
+“Fair means everyone gets what they need. And the only way to get
+what you need is to make it happen yourself.” – Rick Riordan
+:::
+
+::: {.column width="60%"}
+# Subscribe
+<iframe id="beehiiv-form" src="https://embeds.beehiiv.com/8ca7f078-5b32-41f3-bef9-4038e0d29e39?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent; height: 75px; width: 90%;"></iframe>
+
+
+:::
+
+:::: 
+
+
+
