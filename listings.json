@@ -1,0 +1,31 @@
+[
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/FAIR/index.html",
+      "/posts/FAIR/workshops.html",
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/Blog.html",
+    "items": [
+      "/posts/FAIR/index.html",
+      "/posts/FAIR/workshops.html",
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/fair.html",
+    "items": [
+      "/posts/FAIR/workshops.html",
+      "/posts/FAIR/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/FAIR/workshops.html",
+    "items": []
+  }
+]
