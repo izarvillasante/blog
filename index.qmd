@@ -20,7 +20,7 @@ page-layout: full
 
 
 ::: {.g-col-12 .g-col-md-6}
-![](mario.gif)
+![](images/mario.gif)
 :::
 
 ::: {.g-col-12 .g-col-md-6}
