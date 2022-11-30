@@ -80,7 +80,78 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://www.idevillasante.com/posts/FAIR/workshops.html</guid>
-  <pubDate>Mon, 28 Nov 2022 09:50:37 GMT</pubDate>
+  <pubDate>Wed, 30 Nov 2022 10:38:15 GMT</pubDate>
+</item>
+<item>
+  <title>PTPN11 mutagenesis</title>
+  <dc:creator>Izar de Villasante</dc:creator>
+  <link>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="ptpn11-sequence-saturation-mutagenesis-sesam" class="level1">
+<h1>PTPN11 <strong><em>Se</em></strong>quence <strong><em>Sa</em></strong>turation <strong><em>M</em></strong>utagenesis (SeSaM)</h1>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>PTPN11 gene is involved in a rare leukemia. The aim of the project is to investigate the effect of functional mutations in different aminoacids of this protein into developing the illness.</p>
+<p>The technique introduces mutations by adding <em>universal nucleoside analogs</em> in a pcr amplification process. For each copy, these nucleosides are inserted in one single random place across the sequence. Then an elongation process takes place where 0 to 2 extra analogs are introduced. Finally, these analog bases are substituted by random nucleotides. In these project in particular the targeted protein is <em>PTPN11</em> and has a sequence of <em>594 codons</em> / (593 aa + stop) and it’s equivalent CDS of <em>1782 bp</em>. Let’s have a look at the raw gene sequenece:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(data.table)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">library</span>(stringi)</span>
+<span id="cb1-3">wt_seq<span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">paste0</span>(<span class="fu" style="color: #4758AB;">readLines</span>(<span class="fu" style="color: #4758AB;">paste0</span>(params<span class="sc" style="color: #5E5E5E;">$</span>raw,params<span class="sc" style="color: #5E5E5E;">$</span>gene_file))[<span class="sc" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],<span class="at" style="color: #657422;">collapse=</span><span class="st" style="color: #20794D;">""</span>)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;">cat</span>(<span class="st" style="color: #20794D;">"</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;">PTPN11 gene sequence:</span><span class="sc" style="color: #5E5E5E;">\n\n</span><span class="st" style="color: #20794D;">"</span>,wt_seq)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+PTPN11 gene sequence:
+
+ ATGACATCGCGGAGATGGTTTCACCCAAATATCACTGGTGTGGAGGCAGAAAACCTACTGTTGACAAGAGGAGTTGATGGCAGTTTTTTGGCAAGGCCTAGTAAAAGTAACCCTGGAGACTTCACACTTTCCGTTAGAAGAAATGGAGCTGTCACCCACATCAAGATTCAGAACACTGGTGATTACTATGACCTGTATGGAGGGGAGAAATTTGCCACTTTGGCTGAGTTGGTCCAGTATTACATGGAACATCACGGGCAATTAAAAGAGAAGAATGGAGATGTCATTGAGCTTAAATATCCTCTGAACTGTGCAGATCCTACCTCTGAAAGGTGGTTTCATGGACATCTCTCTGGGAAAGAAGCAGAGAAATTATTAACTGAAAAAGGAAAACATGGTAGTTTTCTTGTACGAGAGAGCCAGAGCCACCCTGGAGATTTTGTTCTTTCTGTGCGCACTGGTGATGACAAAGGGGAGAGCAATGACGGCAAGTCTAAAGTGACCCATGTTATGATTCGCTGTCAGGAACTGAAATACGACGTTGGTGGAGGAGAACGGTTTGATTCTTTGACAGATCTTGTGGAACATTATAAGAAGAATCCTATGGTGGAAACATTGGGTACAGTACTACAACTCAAGCAGCCCCTTAACACGACTCGTATAAATGCTGCTGAAATAGAAAGCAGAGTTCGAGAACTAAGCAAATTAGCTGAGACCACAGATAAAGTCAAACAAGGCTTTTGGGAAGAATTTGAGACACTACAACAACAGGAGTGCAAACTTCTCTACAGCCGAAAAGAGGGTCAAAGGCAAGAAAACAAAAACAAAAATAGATATAAAAACATCCTGCCCTTTGATCATACCAGGGTTGTCCTACACGATGGTGATCCCAATGAGCCTGTTTCAGATTACATCAATGCAAATATCATCATGCCTGAATTTGAAACCAAGTGCAACAATTCAAAGCCCAAAAAGAGTTACATTGCCACACAAGGCTGCCTGCAAAACACGGTGAATGACTTTTGGCGGATGGTGTTCCAAGAAAACTCCCGAGTGATTGTCATGACAACGAAAGAAGTGGAGAGAGGAAAGAGTAAATGTGTCAAATACTGGCCTGATGAGTATGCTCTAAAAGAATATGGCGTCATGCGTGTTAGGAACGTCAAAGAAAGCGCCGCTCATGACTATACGCTAAGAGAACTTAAACTTTCAAAGGTTGGACAAGGGAATACGGAGAGAACGGTCTGGCAATACCACTTTCGGACCTGGCCGGACCACGGCGTGCCCAGCGACCCTGGGGGCGTGCTGGACTTCCTGGAGGAGGTGCACCATAAGCAGGAGAGCATCATGGATGCAGGGCCGGTCGTGGTGCACTGCAGTGCTGGAATTGGCCGGACAGGGACGTTCATTGTGATTGATATTCTTATTGACATCATCAGAGAGAAAGGTGTTGACTGCGATATTGACGTTCCCAAAACCATCCAGATGGTGCGGTCTCAGAGGTCAGGGATGGTCCAGACAGAAGCACAGTACCGATTTATCTATATGGCGGTCCAGCATTATATTGAAACACTACAGCGCAGGATTGAAGAAGAGCAGAAAAGCAAGAGGAAAGGGCACGAATATACAAATATTAAGTATTCTCTAGCGGACCAGACGAGTGGAGATCAGAGCCCTCTCCCGCCTTGTACTCCAACGCCACCCTGTGCAGAAATGAGAGAAGACAGTGCTAGAGTCTATGAAAACGTGGGCCTGATGCAACAGCAGAAAAGTTTCAGATGA</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">wt_counts<span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">data.table</span>(<span class="fu" style="color: #4758AB;">t</span>(<span class="fu" style="color: #4758AB;">stri_count_fixed</span>(wt_seq,<span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"A"</span>,<span class="st" style="color: #20794D;">"C"</span>,<span class="st" style="color: #20794D;">"T"</span>,<span class="st" style="color: #20794D;">"G"</span>))<span class="sc" style="color: #5E5E5E;">/</span><span class="fu" style="color: #4758AB;">nchar</span>(wt_seq) <span class="sc" style="color: #5E5E5E;">*</span> <span class="dv" style="color: #AD0000;">100</span>))</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;">colnames</span>(wt_counts)<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"A"</span>,<span class="st" style="color: #20794D;">"C"</span>,<span class="st" style="color: #20794D;">"T"</span>,<span class="st" style="color: #20794D;">"G"</span>)</span>
+<span id="cb3-3"></span>
+<span id="cb3-4">wt_codons<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">as.character</span>(<span class="fu" style="color: #4758AB;">stri_extract_all_regex</span>(wt_seq,<span class="st" style="color: #20794D;">'.{1,3}'</span>,<span class="at" style="color: #657422;">simplify=</span>T)) <span class="co" style="color: #5E5E5E;">#wt_codons &lt;- stri_sub(wt_seq,length=3,from=c(seq(from=1,to=nchar(wt_seq),by=3)))</span></span></code></pre></div>
+</div>
+<p>And the “wild type” protein sequence:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;"># rg&lt;-readRDS(params$dict)#extracted from RGenetics</span></span>
+<span id="cb4-2">rg <span class="ot" style="color: #003B4F;">&lt;-</span>RGenetics<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">geneticCodeTable</span>()</span>
+<span id="cb4-3">wt_counts[,(<span class="fu" style="color: #4758AB;">names</span>(<span class="fu" style="color: #4758AB;">table</span>(wt_codons)))<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">=</span> <span class="fu" style="color: #4758AB;">as.list</span>(<span class="fu" style="color: #4758AB;">table</span>(wt_codons) <span class="sc" style="color: #5E5E5E;">/</span> <span class="fu" style="color: #4758AB;">length</span>(wt_codons)<span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">100</span>)]</span>
+<span id="cb4-4">ct<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">as.data.table</span>(rg,<span class="at" style="color: #657422;">key =</span> <span class="st" style="color: #20794D;">"GeneticCode"</span>)</span>
+<span id="cb4-5">wt_aa <span class="ot" style="color: #003B4F;">&lt;-</span> ct[wt_codons,AminoAcids]</span>
+<span id="cb4-6"><span class="fu" style="color: #4758AB;">cat</span>(<span class="st" style="color: #20794D;">"</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;">PTPN11 amino acid sequence:</span><span class="sc" style="color: #5E5E5E;">\n\n</span><span class="st" style="color: #20794D;">"</span>,wt_aa)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+PTPN11 amino acid sequence:
+
+ Met Thr Ser Arg Arg Trp Phe His Pro Asn Ile Thr Gly Val Glu Ala Glu Asn Leu Leu Leu Thr Arg Gly Val Asp Gly Ser Phe Leu Ala Arg Pro Ser Lys Ser Asn Pro Gly Asp Phe Thr Leu Ser Val Arg Arg Asn Gly Ala Val Thr His Ile Lys Ile Gln Asn Thr Gly Asp Tyr Tyr Asp Leu Tyr Gly Gly Glu Lys Phe Ala Thr Leu Ala Glu Leu Val Gln Tyr Tyr Met Glu His His Gly Gln Leu Lys Glu Lys Asn Gly Asp Val Ile Glu Leu Lys Tyr Pro Leu Asn Cys Ala Asp Pro Thr Ser Glu Arg Trp Phe His Gly His Leu Ser Gly Lys Glu Ala Glu Lys Leu Leu Thr Glu Lys Gly Lys His Gly Ser Phe Leu Val Arg Glu Ser Gln Ser His Pro Gly Asp Phe Val Leu Ser Val Arg Thr Gly Asp Asp Lys Gly Glu Ser Asn Asp Gly Lys Ser Lys Val Thr His Val Met Ile Arg Cys Gln Glu Leu Lys Tyr Asp Val Gly Gly Gly Glu Arg Phe Asp Ser Leu Thr Asp Leu Val Glu His Tyr Lys Lys Asn Pro Met Val Glu Thr Leu Gly Thr Val Leu Gln Leu Lys Gln Pro Leu Asn Thr Thr Arg Ile Asn Ala Ala Glu Ile Glu Ser Arg Val Arg Glu Leu Ser Lys Leu Ala Glu Thr Thr Asp Lys Val Lys Gln Gly Phe Trp Glu Glu Phe Glu Thr Leu Gln Gln Gln Glu Cys Lys Leu Leu Tyr Ser Arg Lys Glu Gly Gln Arg Gln Glu Asn Lys Asn Lys Asn Arg Tyr Lys Asn Ile Leu Pro Phe Asp His Thr Arg Val Val Leu His Asp Gly Asp Pro Asn Glu Pro Val Ser Asp Tyr Ile Asn Ala Asn Ile Ile Met Pro Glu Phe Glu Thr Lys Cys Asn Asn Ser Lys Pro Lys Lys Ser Tyr Ile Ala Thr Gln Gly Cys Leu Gln Asn Thr Val Asn Asp Phe Trp Arg Met Val Phe Gln Glu Asn Ser Arg Val Ile Val Met Thr Thr Lys Glu Val Glu Arg Gly Lys Ser Lys Cys Val Lys Tyr Trp Pro Asp Glu Tyr Ala Leu Lys Glu Tyr Gly Val Met Arg Val Arg Asn Val Lys Glu Ser Ala Ala His Asp Tyr Thr Leu Arg Glu Leu Lys Leu Ser Lys Val Gly Gln Gly Asn Thr Glu Arg Thr Val Trp Gln Tyr His Phe Arg Thr Trp Pro Asp His Gly Val Pro Ser Asp Pro Gly Gly Val Leu Asp Phe Leu Glu Glu Val His His Lys Gln Glu Ser Ile Met Asp Ala Gly Pro Val Val Val His Cys Ser Ala Gly Ile Gly Arg Thr Gly Thr Phe Ile Val Ile Asp Ile Leu Ile Asp Ile Ile Arg Glu Lys Gly Val Asp Cys Asp Ile Asp Val Pro Lys Thr Ile Gln Met Val Arg Ser Gln Arg Ser Gly Met Val Gln Thr Glu Ala Gln Tyr Arg Phe Ile Tyr Met Ala Val Gln His Tyr Ile Glu Thr Leu Gln Arg Arg Ile Glu Glu Glu Gln Lys Ser Lys Arg Lys Gly His Glu Tyr Thr Asn Ile Lys Tyr Ser Leu Ala Asp Gln Thr Ser Gly Asp Gln Ser Pro Leu Pro Pro Cys Thr Pro Thr Pro Pro Cys Ala Glu Met Arg Glu Asp Ser Ala Arg Val Tyr Glu Asn Val Gly Leu Met Gln Gln Gln Lys Ser Phe Arg Stop</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">wt_counts[,(<span class="fu" style="color: #4758AB;">names</span>(<span class="fu" style="color: #4758AB;">table</span>(wt_aa)))<span class="sc" style="color: #5E5E5E;">:</span><span class="er" style="color: #AD0000;">=</span> <span class="fu" style="color: #4758AB;">as.list</span>(<span class="fu" style="color: #4758AB;">table</span>(wt_aa) <span class="sc" style="color: #5E5E5E;">/</span> <span class="fu" style="color: #4758AB;">length</span>(wt_aa)<span class="sc" style="color: #5E5E5E;">*</span><span class="dv" style="color: #AD0000;">100</span>)]</span></code></pre></div>
+</div>
+<p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
+    <div id="app-3B7O" class="molstar-app"></div>
+    <script type="text/javascript">
+    molstar.Viewer.create("app-3B7O", {"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"layoutShowControls":false,"viewportShowAnimation":true,"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowRemoteState":false,"emdbProvider":"rcsb"}).then(viewer => {
+    viewer.loadPdb("3B7O");    });
+    </script>
+    
+<p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
+    <div id="app-Q96I26" class="molstar-app"></div>
+    <script type="text/javascript">
+    molstar.Viewer.create("app-Q96I26", {"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"layoutShowControls":false,"viewportShowAnimation":true,"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowRemoteState":false,"emdbProvider":"rcsb"}).then(viewer => {
+    viewer.loadAlphaFoldDb(afdb="Q96I26")    });
+    </script>
+    
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</guid>
+  <pubDate>Wed, 30 Nov 2022 10:38:15 GMT</pubDate>
 </item>
 </channel>
 </rss>

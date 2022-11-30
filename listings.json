@@ -4,8 +4,15 @@
     "items": [
       "/posts/FAIR/index.html",
       "/posts/FAIR/workshops.html",
+      "/posts/mutagenesis/ptpn11.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/mutagenesis.html",
+    "items": [
+      "/posts/mutagenesis/ptpn11.html"
     ]
   },
   {
@@ -13,6 +20,7 @@
     "items": [
       "/posts/FAIR/index.html",
       "/posts/FAIR/workshops.html",
+      "/posts/mutagenesis/ptpn11.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
     ]
