@@ -1,0 +1,65 @@
+---
+title: PTPN11 mutagenesis
+
+params:
+  raw: "data-raw/ptpn11/"
+  batch1: "batch1/PTPN11_trimmed"
+  batch2: "batch2/mut_batch2"
+  gene_file: "gene.fasta"
+  dict: "rg.rds"
+# molstar: embed
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,max.print=10,fig.path = "analysis/plots/",fig.dim=c(12,14))
+```
+
+
+# PTPN11 ***Se***quence ***Sa***turation ***M***utagenesis (SeSaM)
+
+## Intro 
+
+PTPN11 gene is involved in a rare leukemia. The aim of the project is to investigate the effect of functional mutations in different aminoacids of this protein into developing the illness.
+
+The technique introduces mutations by adding *universal nucleoside analogs* in a pcr amplification process. For each copy, these nucleosides are inserted in one single random place across the sequence. Then an elongation process takes place where 0 to 2 extra analogs are introduced. Finally, these analog bases are substituted by random nucleotides. In these project in particular the targeted protein is *PTPN11* and has a sequence of *594 codons* / (593 aa + stop) and it's equivalent CDS of *1782 bp*. 
+Let's have a look at the raw gene sequenece:
+
+```{r}
+library(data.table)
+library(stringi)
+wt_seq<- paste0(readLines(paste0(params$raw,params$gene_file))[-1],collapse="")
+cat("\nPTPN11 gene sequence:\n\n",wt_seq)
+
+```
+
+```{r}
+wt_counts<- data.table(t(stri_count_fixed(wt_seq,c("A","C","T","G"))/nchar(wt_seq) * 100))
+colnames(wt_counts)<-c("A","C","T","G")
+
+wt_codons<-as.character(stri_extract_all_regex(wt_seq,'.{1,3}',simplify=T)) #wt_codons <- stri_sub(wt_seq,length=3,from=c(seq(from=1,to=nchar(wt_seq),by=3)))
+
+```
+
+And the "wild type" protein sequence:
+
+```{r}
+# rg<-readRDS(params$dict)#extracted from RGenetics
+rg <-RGenetics::geneticCodeTable()
+wt_counts[,(names(table(wt_codons))):= as.list(table(wt_codons) / length(wt_codons)*100)]
+ct<-as.data.table(rg,key = "GeneticCode")
+wt_aa <- ct[wt_codons,AminoAcids]
+cat("\nPTPN11 amino acid sequence:\n\n",wt_aa)
+wt_counts[,(names(table(wt_aa))):= as.list(table(wt_aa) / length(wt_aa)*100)]
+
+```
+
+So, it is quite difficult to get anything from those. Let's take a look into its 3D structure:
+
+{{< mol-rcsb 3B7O >}}
+
+We can also take a look in the [AlphaFold Database](https://alphafold.com/) to compare the wild type structure to the mutants.
+{{< mol-afdb Q96I26 >}}
+ 
+
