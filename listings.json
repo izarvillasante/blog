@@ -26,14 +26,14 @@
     ]
   },
   {
+    "listing": "/posts/FAIR/workshops.html",
+    "items": []
+  },
+  {
     "listing": "/fair.html",
     "items": [
       "/posts/FAIR/workshops.html",
       "/posts/FAIR/index.html"
     ]
-  },
-  {
-    "listing": "/posts/FAIR/workshops.html",
-    "items": []
   }
 ]

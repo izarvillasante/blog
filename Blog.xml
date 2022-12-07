@@ -80,7 +80,7 @@ No matching items
 </div>
 </div> ]]></description>
   <guid>https://www.idevillasante.com/posts/FAIR/workshops.html</guid>
-  <pubDate>Wed, 30 Nov 2022 10:38:15 GMT</pubDate>
+  <pubDate>Wed, 07 Dec 2022 21:59:57 GMT</pubDate>
 </item>
 <item>
   <title>PTPN11 mutagenesis</title>
@@ -133,14 +133,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"layoutShowControls":false,"viewportShowAnimation":true,"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowRemoteState":false,"emdbProvider":"rcsb"}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"layoutShowControls":false,"layoutShowLog":false,"viewportShowExpand":true,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowAnimation":true,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"layoutShowRemoteState":false}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"layoutShowControls":false,"viewportShowAnimation":true,"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowExpand":true,"layoutIsExpanded":false,"layoutShowRemoteState":false,"emdbProvider":"rcsb"}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"layoutShowControls":false,"layoutShowLog":false,"viewportShowExpand":true,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowAnimation":true,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"layoutShowRemoteState":false}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
@@ -151,7 +151,7 @@ PTPN11 amino acid sequence:
 
  ]]></description>
   <guid>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</guid>
-  <pubDate>Wed, 30 Nov 2022 10:38:15 GMT</pubDate>
+  <pubDate>Wed, 07 Dec 2022 21:59:57 GMT</pubDate>
 </item>
 </channel>
 </rss>
