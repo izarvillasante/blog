@@ -5,6 +5,7 @@
 .Ruserdata
 /.quarto/
 _site
+_freeze
 blog.Rproj
 =======
 # History files
