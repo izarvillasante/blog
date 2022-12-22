@@ -1,18 +1,8 @@
 ---
-title: "Series: FAIR"
-listing:
-  contents: posts/FAIR
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, reading-time, description]
-page-layout: full
-title-block-banner: true
-editor: 
-  markdown: 
-    wrap: 72
+title: "FAIR Data Science"
+author: "Izar de Villasante"
+date: "2022-12-22"
+categories: [news]
 ---
 
 This list should contain a series of topics related to modern data
@@ -35,7 +25,7 @@ Below is a presentation with some of the main concepts that inspired this series
 <div>
 
 ```{=html}
-<iframe class="slide-deck" src="press.html"></iframe>
+<iframe class="slide-deck" src="slides/fair_press.html"></iframe>
 ```
 
 </div>
