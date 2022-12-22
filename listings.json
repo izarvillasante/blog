@@ -1,8 +1,17 @@
 [
   {
+    "listing": "/fair.html",
+    "items": [
+      "/posts/FAIR/press.html",
+      "/posts/FAIR/workshops.html",
+      "/posts/FAIR/index.html"
+    ]
+  },
+  {
     "listing": "/archive.html",
     "items": [
       "/posts/FAIR/index.html",
+      "/posts/FAIR/press.html",
       "/posts/FAIR/workshops.html",
       "/posts/mutagenesis/ptpn11.html",
       "/posts/post-with-code/index.html",
@@ -19,6 +28,7 @@
     "listing": "/Blog.html",
     "items": [
       "/posts/FAIR/index.html",
+      "/posts/FAIR/press.html",
       "/posts/FAIR/workshops.html",
       "/posts/mutagenesis/ptpn11.html",
       "/posts/post-with-code/index.html",
@@ -28,12 +38,5 @@
   {
     "listing": "/posts/FAIR/workshops.html",
     "items": []
-  },
-  {
-    "listing": "/fair.html",
-    "items": [
-      "/posts/FAIR/workshops.html",
-      "/posts/FAIR/index.html"
-    ]
   }
 ]

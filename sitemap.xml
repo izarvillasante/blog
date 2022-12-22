@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.idevillasante.com/fair.html</loc>
+    <lastmod>2022-12-22T09:18:22.930Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.idevillasante.com/archive.html</loc>
-    <lastmod>2022-12-07T21:59:56.275Z</lastmod>
+    <lastmod>2022-12-22T09:18:23.666Z</lastmod>
   </url>
   <url>
     <loc>https://www.idevillasante.com/mutagenesis.html</loc>
-    <lastmod>2022-12-07T21:59:56.919Z</lastmod>
+    <lastmod>2022-12-22T09:18:23.974Z</lastmod>
   </url>
   <url>
     <loc>https://www.idevillasante.com/Blog.html</loc>
-    <lastmod>2022-12-07T21:59:57.327Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.idevillasante.com/posts/post-with-code/index.html</loc>
-    <lastmod>2022-12-07T21:59:57.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.idevillasante.com/posts/FAIR/workshops.html</loc>
-    <lastmod>2022-12-07T21:59:58.087Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.idevillasante.com/posts/FAIR/index.html</loc>
-    <lastmod>2022-12-07T21:59:58.379Z</lastmod>
+    <lastmod>2022-12-22T09:18:24.366Z</lastmod>
   </url>
   <url>
     <loc>https://www.idevillasante.com/posts/welcome/index.html</loc>
-    <lastmod>2022-12-07T21:59:58.667Z</lastmod>
+    <lastmod>2022-12-22T09:18:24.686Z</lastmod>
   </url>
   <url>
     <loc>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</loc>
-    <lastmod>2022-12-07T21:59:59.219Z</lastmod>
+    <lastmod>2022-12-22T09:18:25.214Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.idevillasante.com/posts/post-with-code/index.html</loc>
+    <lastmod>2022-12-22T09:18:25.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.idevillasante.com/posts/FAIR/press.html</loc>
+    <lastmod>2022-12-22T09:18:29.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.idevillasante.com/posts/FAIR/workshops.html</loc>
+    <lastmod>2022-12-22T09:18:29.794Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.idevillasante.com/posts/FAIR/index.html</loc>
+    <lastmod>2022-12-22T09:18:30.074Z</lastmod>
   </url>
   <url>
     <loc>https://www.idevillasante.com/index.html</loc>
-    <lastmod>2022-12-07T21:59:59.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.idevillasante.com/fair.html</loc>
-    <lastmod>2022-12-07T21:59:59.819Z</lastmod>
+    <lastmod>2022-12-22T09:18:30.386Z</lastmod>
   </url>
 </urlset>
