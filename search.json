@@ -21,18 +21,18 @@
     "text": "PTPN11 mutagenesis\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "Blog.html",
+    "href": "Blog.html",
+    "title": "Izar de Villasante",
+    "section": "",
+    "text": "Series\n\n<F.A.I.R. series>\nThis series contains a great deal of tips, tricks and packages that you can use to take your data science to the next level with FAIR development practices.\n\n“Fair means everyone gets what they need. And the only way to get what you need is to make it happen yourself.” – Rick Riordan\n\n\n\n\nSeries\n\nmutagenesis\nThis series explores the bioinformatic tools applied to mutagenesis. It includes quite awesome extension molstar.\n\n\n\n\n\n\n\nSubscribe\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPTPN11 mutagenesis\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nFAIR Data Science\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/FAIR/index.html",
-    "href": "posts/FAIR/index.html",
-    "title": "FAIR Data Science",
-    "section": "",
-    "text": "This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:\n\nrunning R and Rstudio in a remote and portable setup.\nSetting up binder for running the scripts in your github repository\nUse github actions to update rocker images containing rstudio server and all the packages and dependencies that the code in your repository needs to run.\nWorking in remote with rstudio.\nQuarto notebooks\n\nBelow is a presentation with some of the main concepts that inspired this series."
   },
   {
     "objectID": "posts/mutagenesis/ptpn11.html",
@@ -49,16 +49,16 @@
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "Blog.html",
-    "href": "Blog.html",
-    "title": "Izar de Villasante",
+    "objectID": "posts/FAIR/index.html",
+    "href": "posts/FAIR/index.html",
+    "title": "FAIR Data Science",
     "section": "",
-    "text": "Series\n\n<F.A.I.R. series>\nThis series contains a great deal of tips, tricks and packages that you can use to take your data science to the next level with FAIR development practices.\n\n“Fair means everyone gets what they need. And the only way to get what you need is to make it happen yourself.” – Rick Riordan\n\n\n\n\nSeries\n\nmutagenesis\nThis series explores the bioinformatic tools applied to mutagenesis. It includes quite awesome extension molstar.\n\n\n\n\n\n\n\nSubscribe\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPTPN11 mutagenesis\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nFAIR Data Science\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:\n\nrunning R and Rstudio in a remote and portable setup.\nSetting up binder for running the scripts in your github repository\nUse github actions to update rocker images containing rstudio server and all the packages and dependencies that the code in your repository needs to run.\nWorking in remote with rstudio.\nQuarto notebooks\n\nBelow is a presentation with some of the main concepts that inspired this series."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hi, I’m Izar de villasante.",
+    "title": "Izar de Villasante",
     "section": "",
     "text": "Hi, I’m Izar de villasante.\nI’m a bioinformatician with a passion for R, data visualization, Shiny and statistics/machine learning. On this blog, I share and teach what I learn.\nTo get started, you can check out my most popular content below. You can find me on Twitter or GitHub and YouTube. Feel free to reach out to me via mail and subscribe to my email newsletter."
   }
