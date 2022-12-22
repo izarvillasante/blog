@@ -25,7 +25,7 @@ Below is a presentation with some of the main concepts that inspired this series
 <div>
 
 ```{=html}
-<iframe class="slide-deck" src="slides/fair_press.html"></iframe>
+<iframe width="780" height="500" class="slide-deck" src="slides/fair_press.html"></iframe>
 ```
 
 </div>

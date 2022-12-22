@@ -3,23 +3,28 @@ title: "FAIR Bioinformatics"
 subtitle: "Bioinformatic talks 14/12/2022"
 author: "Izar de Villasante"
 toc: false
+
 format:
-  revealjs: 
+  revealjs:
     embed-resources: true
     slide-number: true
-    width: 1920
-    height: 1080
+    width: 780
+    height: 500
     smaller: true
-
+    output-file: fair_press.html
     preview-links: auto
-    css: styles.css
+    
+
 resources:
   - fairprinciplespaper.pdf
-  - styles.css
+
   - images/
-execute: 
+execute:
   cache: false
+
 ---
+
+
 
 ```{r setup, include=FALSE}
 library(fontawesome)
@@ -43,7 +48,7 @@ library(gtsummary)
   text-orientation: upright;
   writing-mode: vertical-lr;
   text-align: justify;
- 
+
   width: 200px;
   height: 90px;
 }
@@ -274,21 +279,21 @@ idevillasante$ quarto --help
     Quarto CLI
 
   Options:
-    -h, --help     - Show this help.                            
-    -V, --version  - Show the version number for this program.  
+    -h, --help     - Show this help.
+    -V, --version  - Show the version number for this program.
 
   Commands:
-    render          [input] [args...]   - Render input file(s) to various document types.            
-    preview         [file] [args...]    - Render and preview a document or website project.          
-    serve           [input]             - Serve a Shiny interactive document.                        
-    create-project  [dir]               - Create a project for rendering multiple documents          
-    convert         <input>             - Convert documents to alternate representations.            
-    pandoc          [args...]           - Run the version of Pandoc embedded within Quarto.          
-    run             [script] [args...]  - Run a TypeScript, R, Python, or Lua script.                
-    install         <type> [target]     - Installs an extension or global dependency.                
+    render          [input] [args...]   - Render input file(s) to various document types.
+    preview         [file] [args...]    - Render and preview a document or website project.
+    serve           [input]             - Serve a Shiny interactive document.
+    create-project  [dir]               - Create a project for rendering multiple documents
+    convert         <input>             - Convert documents to alternate representations.
+    pandoc          [args...]           - Run the version of Pandoc embedded within Quarto.
+    run             [script] [args...]  - Run a TypeScript, R, Python, or Lua script.
+    install         <type> [target]     - Installs an extension or global dependency.
     publish         [provider] [path]   - Publish a document or project. Available providers include:
-    check           [target]            - Verify correct functioning of Quarto installation.         
-    help            [command]           - Show this help or the help of a sub-command.    
+    check           [target]            - Verify correct functioning of Quarto installation.
+    help            [command]           - Show this help or the help of a sub-command.
 ```
 
 ## Quarto, more than *just* `knitr`
@@ -313,7 +318,7 @@ Quarto notebooks combine dual engine ... Knitr
 
 Quarto notebooks combine dual engine ... or jupyter
 
-![](images/qmd-jupyter.png) 
+![](images/qmd-jupyter.png)
 
 <br>
 
@@ -368,7 +373,7 @@ fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
 
 ![](images/quarto.png){.absolute bottom="50" left="575" width="250"}
 
-## 
+##
 
 [So what is Quarto?]{style="font-size: 100px;"}
 
@@ -568,7 +573,7 @@ RUN /rocker_scripts/install_shiny_server.sh
 https://github.com/rocker-org/rocker-versioned2.git
 
 ``` r
-FROM rocker/rstudio:4.0.0 
+FROM rocker/rstudio:4.0.0
 
 # Custom versions
 ENV DEBIAN_FRONTEND noninteractive
@@ -592,7 +597,7 @@ RUN /rocker_scripts/install_shiny_server.sh
 https://github.com/rocker-org/rocker-versioned2.git
 
 ``` r
-FROM rocker/rstudio:4.0.0 
+FROM rocker/rstudio:4.0.0
 
 # Custom versions
 ENV DEBIAN_FRONTEND noninteractive
@@ -625,7 +630,7 @@ RUN apt-get update && \
 https://github.com/rocker-org/rocker-versioned2.git
 
 ``` r
-FROM rocker/rstudio:4.0.0 
+FROM rocker/rstudio:4.0.0
 
 # Add metadata labels
 LABEL org.opencontainers.image.licenses="GPL-2.0-or-later" \
