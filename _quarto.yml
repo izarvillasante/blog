@@ -18,18 +18,11 @@ website:
 # You can ignore this part in the first step
       - icon: rss
         href: blog.xml
-      - text: Ressources
+      - text: Resources
         menu:
           - text: Workshops
             href: https://ijcbit.github.io/Workshops/
-          # - text: DataViz Portfolio
-          #   href: dataviz_portfolio.html
-          # - text: YARDS
-          #   href: https://yards.albert-rapp.de/
-          # - text: R Weekly
-          #   href: https://rweekly.org/
-          # - text: R Bloggers
-          #   href: https://www.r-bloggers.com/
+
       - text: Archive
         href: archive.qmd
   google-analytics: G-V60NC304KY
@@ -37,7 +30,7 @@ website:
   # twitter-card: 
   #   image: thumbnail_blog.png
   #   card-style: summary_large_image
-  #   creator: "@rappa753"
+  #   creator: "@izar"
 
 # filters:
   # - code-filename
