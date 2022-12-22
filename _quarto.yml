@@ -12,10 +12,7 @@ website:
         href: https://github.com/izarvillasante
       - icon: twitter
         href: https://twitter.com
-      - text: "<F.A.I.R.>" 
-        href: posts/FAIR/index.qmd
-#########################
-# You can ignore this part in the first step
+
       - icon: rss
         href: blog.xml
       - text: Resources
@@ -34,7 +31,7 @@ website:
 
 # filters:
   # - code-filename
-######################### 
+
 
 format:
   html:
