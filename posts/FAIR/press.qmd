@@ -260,7 +260,7 @@ yourself"]{style="color: black;font-size: 1em; writing-mode: horizontal-tb;"}
 > notebook) into static PDF/Word/HTML reports, books, websites,
 > presentations and more
 
-```{py}
+```{}
 #| eval: false
 #| echo: true
 #| code-line-numbers: "|1|4|10|14|15"
