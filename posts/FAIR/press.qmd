@@ -16,7 +16,8 @@ resources:
   - fairprinciplespaper.pdf
   - styles.css
   - images/
-
+execute: 
+  cache: false
 ---
 
 ```{r setup, include=FALSE}

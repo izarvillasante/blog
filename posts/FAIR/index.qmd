@@ -1,1 +1,41 @@
-asdsa
+---
+title: "Series: FAIR"
+listing:
+  contents: posts/FAIR
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, reading-time, description]
+page-layout: full
+title-block-banner: true
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+This list should contain a series of topics related to modern data
+science working environment with R. You can expect posts about:
+
+-    running R and Rstudio in a remote and portable setup.
+
+-    Setting up binder for running the scripts in your github repository
+
+-   Use github actions to update rocker images containing rstudio server
+    and all the packages and dependencies that the code in your
+    repository needs to run.
+
+-   Working in remote with rstudio.
+
+-    Quarto notebooks
+
+Below is a presentation with some of the main concepts that inspired this series. 
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="slides/fair_press.html"></iframe>
+```
+
+</div>
