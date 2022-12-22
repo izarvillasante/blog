@@ -12,11 +12,10 @@ format:
 
     preview-links: auto
     css: styles.css
-    # footer: <https://quarto.org>
-editor: 
-  markdown: 
-    wrap: 72
-    
+resources:
+  - fairprinciplespaper.pdf
+  - styles.css
+  - images/
 
 ---
 
