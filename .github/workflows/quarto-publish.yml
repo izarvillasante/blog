@@ -33,7 +33,7 @@ jobs:
       # that deals with the dependencies
       - uses: r-lib/actions/setup-r-dependencies@v2
         with: 
-          packages: |
+          extra-packages: |
             any::rmarkdown
             any::terra
       - uses: r-lib/actions/setup-renv@v2    
