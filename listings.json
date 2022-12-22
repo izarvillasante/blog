@@ -2,15 +2,14 @@
   {
     "listing": "/fair.html",
     "items": [
-      "/posts/FAIR/slides/press.html",
       "/posts/FAIR/index.html"
     ]
   },
   {
     "listing": "/archive.html",
     "items": [
-      "/posts/FAIR/slides/press.html",
       "/posts/mutagenesis/ptpn11.html",
+      "/posts/slides/press.html",
       "/posts/FAIR/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
@@ -25,8 +24,8 @@
   {
     "listing": "/Blog.html",
     "items": [
-      "/posts/FAIR/slides/press.html",
       "/posts/mutagenesis/ptpn11.html",
+      "/posts/slides/press.html",
       "/posts/FAIR/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
