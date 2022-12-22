@@ -37,10 +37,11 @@ what you need is to make it happen yourself.” – Rick Riordan
 
 ##### [mutagenesis](mutagenesis.html)
 This series explores the bioinformatic tools applied to mutagenesis. 
+It includes quite awesome extension molstar.
 
 <!-- La paciència comença amb llàgrimes, i, a la fi, somriu. Ramon Llull (Ciutat de Mallorca, 1232/1233 -->
-“Fair means everyone gets what they need. And the only way to get
-what you need is to make it happen yourself.” – Rick Riordan
+<!-- “Fair means everyone gets what they need. And the only way to get -->
+<!-- what you need is to make it happen yourself.” – Rick Riordan -->
 :::
 
 ::: {.column width="60%"}
