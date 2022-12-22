@@ -2,6 +2,7 @@
 title: "FAIR Bioinformatics"
 subtitle: "Bioinformatic talks 14/12/2022"
 author: "Izar de Villasante"
+toc: false
 format:
   revealjs: 
     embed-resources: true
