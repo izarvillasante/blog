@@ -294,25 +294,27 @@ idevillasante$ quarto --help
 
 Rmarkdown document processing workflow... . . .
 
-![](IMG/rmd-knitr.png)
+![](images/rmd-knitr.png)
 
 ## Quarto, more than *just* `knitr`
 
 Jupyter notebooks workflow...
 
-![](IMG/jupyter-alone.png)
+![](images/jupyter-alone.png)
 
 ## Quarto, more than *just* `knitr`
 
 Quarto notebooks combine dual engine ... Knitr
 
-![](IMG/qmd-knitr.png)
+![](images/qmd-knitr.png)
 
 ## Quarto, more than *just* `knitr`
 
 Quarto notebooks combine dual engine ... or jupyter
 
-![](IMG/qmd-jupyter.png) <br>
+![](images/qmd-jupyter.png) 
+
+<br>
 
 ## Quarto, more internals
 
@@ -506,11 +508,12 @@ quarto_render("document.qmd", output_format = "pdf")
 > or a reproducibly fixed environment.
 
 ::: columns
-::: {.column width="33%"}
-![](imagesrocker_base.svg)
+::: {.column width="45%"}
+![](images/rocker_base.svg)
 :::
-
-::: {.column width="33%"}
+::: {.column width="10%"}
+:::
+::: {.column width="45%"}
 r ![](images/rocker_versioned.png)
 :::
 :::
