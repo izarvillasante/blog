@@ -29,6 +29,39 @@ library(gtExtras)
 library(gtsummary)
 ```
 
+```{css}
+.vertical-th {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.fair-caps{
+  color: black;
+  font-size: 2em;
+  margin: 10px;
+  margin-top: 0px;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  text-align: justify;
+ 
+  width: 200px;
+  height: 90px;
+}
+.fair-caps2{
+  color: black;
+  font-size: 3em;
+  margin: 10px;
+  margin-top: 0px;
+  text-orientation: sideways;
+  writing-mode: horizontal-tb;
+  text-align: justify;
+
+  width: 200px;
+  height: 90px;
+}
+
+```
+
+
 ## Motivation {auto-animate="true" auto-animate-easing="ease-in-out"}
 
 
@@ -671,12 +704,12 @@ https://localhost:8787
 
 ## Github Actions
 
-##  {background-image="IMG/gh_actions.PNG"}
+##  {background-image="images/gh_actions.PNG"}
 
-##  {background-image="IMG/gh_actions2.PNG"}
+##  {background-image="images/gh_actions2.PNG"}
 
-##  {background-image="IMG/gh_actions3.PNG"}
+##  {background-image="images/gh_actions3.PNG"}
 
-## Rocker versioned {background-image="IMG/faiR_workspace_CI.png"}
+## Rocker versioned {background-image="images/faiR_workspace_CI.png"}
 
 ## The end
