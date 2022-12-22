@@ -303,14 +303,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"viewportShowAnimation":true,"viewportShowExpand":true,"viewportShowSelectionMode":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"layoutShowSequence":false,"layoutShowLog":false,"layoutIsExpanded":false,"layoutShowControls":false,"pdbProvider":"rcsb","layoutShowLeftPanel":true}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowSelectionMode":false,"viewportShowAnimation":true,"viewportShowExpand":true,"layoutShowControls":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"layoutShowSequence":false}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"viewportShowAnimation":true,"viewportShowExpand":true,"viewportShowSelectionMode":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"layoutShowSequence":false,"layoutShowLog":false,"layoutIsExpanded":false,"layoutShowControls":false,"pdbProvider":"rcsb","layoutShowLeftPanel":true}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"layoutShowLog":false,"pdbProvider":"rcsb","viewportShowSelectionMode":false,"viewportShowAnimation":true,"viewportShowExpand":true,"layoutShowControls":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"layoutShowSequence":false}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
