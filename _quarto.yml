@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Izar de Villasante"
-  site-url: https://www.idevillasante.com
+  # site-url: https://www.idevillasante.com
   navbar:
     right:
       - text: Blog
