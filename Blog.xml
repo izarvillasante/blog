@@ -6,55 +6,26 @@
       version="2.0">
 <channel>
 <title>Izar de Villasante</title>
-<link>https://www.idevillasante.com/Blog.html</link>
-<atom:link href="https://www.idevillasante.com/Blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://github.com/izarvillasante/blog/Blog.html</link>
+<atom:link href="https://github.com/izarvillasante/blog/Blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.26</generator>
+<generator>quarto-1.2.280</generator>
 <lastBuildDate>Thu, 22 Dec 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>FAIR Data Science</title>
   <dc:creator>Izar de Villasante</dc:creator>
-  <link>https://www.idevillasante.com/posts/FAIR/index.html</link>
+  <link>https://github.com/izarvillasante/blog/posts/FAIR/index.html</link>
   <description><![CDATA[ 
 
 
 
 <p>This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:</p>
-<p>And related to making your work &lt; F.A.I.R &gt;:</p>
 <ul>
-<li><p>Findable:</p>
-<ul>
-<li>How to publish your work (blog, book, revealjs presentations, webpages, github, CRAN/bioconductor)</li>
-</ul></li>
-<li><p>Accessible:</p>
-<ul>
-<li>How to manage access to your work and how to access it using api.</li>
-</ul></li>
-<li><p>Interoperable:</p></li>
-</ul>
-<pre><code>-   Make your work interact with other tools &amp; programs.
-
--   Workflow languages (nextflow, targets...)
-
--   YAML language and parameters.
-
--   Quarto extensions</code></pre>
-<ul>
-<li><p>Reproducible:</p>
-<ol type="1">
-<li><p>Running R and Rstudio from anywhere with any computer, at any time.</p>
-<ul>
-<li><p>Using and customising rocker-project containers.</p></li>
-<li><p>Setting up binder to start developing right from your github repository.</p></li>
-<li><p>Using github registry to store your docker/singularity containers.</p></li>
-</ul></li>
-<li><p>DevOps principles and practices for bioinformatics.</p>
-<ul>
-<li><p>Automatically install new packages with renv and github actions</p></li>
-<li><p>Set up a CI system with github actions and github registry to keep your work ready for publication/packaging</p></li>
-<li><p>Metadata &amp; best practices for coding.</p></li>
-</ul></li>
-</ol></li>
+<li><p>running R and Rstudio in a remote and portable setup.</p></li>
+<li><p>Setting up binder for running the scripts in your github repository</p></li>
+<li><p>Use github actions to update rocker images containing rstudio server and all the packages and dependencies that the code in your repository needs to run.</p></li>
+<li><p>Working in remote with rstudio.</p></li>
+<li><p>Quarto notebooks</p></li>
 </ul>
 <p>Below is a presentation with some of the main concepts that inspired this series.</p>
 <div>
@@ -65,13 +36,13 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://www.idevillasante.com/posts/FAIR/index.html</guid>
+  <guid>https://github.com/izarvillasante/blog/posts/FAIR/index.html</guid>
   <pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Post With Code</title>
   <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://www.idevillasante.com/posts/post-with-code/index.html</link>
+  <link>https://github.com/izarvillasante/blog/posts/post-with-code/index.html</link>
   <description><![CDATA[ 
 
 
@@ -90,34 +61,34 @@
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://www.idevillasante.com/posts/post-with-code/index.html</guid>
+  <guid>https://github.com/izarvillasante/blog/posts/post-with-code/index.html</guid>
   <pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://www.idevillasante.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://github.com/izarvillasante/blog/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Izar</dc:creator>
-  <link>https://www.idevillasante.com/posts/welcome/index.html</link>
+  <link>https://github.com/izarvillasante/blog/posts/welcome/index.html</link>
   <description><![CDATA[ 
 
 
 
 <p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://www.idevillasante.com/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p><img src="https://github.com/izarvillasante/blog/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
  ]]></description>
   <category>news</category>
-  <guid>https://www.idevillasante.com/posts/welcome/index.html</guid>
+  <guid>https://github.com/izarvillasante/blog/posts/welcome/index.html</guid>
   <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://www.idevillasante.com/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://github.com/izarvillasante/blog/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>PTPN11 mutagenesis</title>
   <dc:creator>Izar de Villasante</dc:creator>
-  <link>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</link>
+  <link>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</link>
   <description><![CDATA[ 
 
 
@@ -165,14 +136,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"layoutIsExpanded":false,"layoutShowControls":false,"viewportShowAnimation":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowExpand":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"layoutShowLog":false}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowControls":false,"viewportShowExpand":true,"emdbProvider":"rcsb","layoutIsExpanded":false}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"layoutIsExpanded":false,"layoutShowControls":false,"viewportShowAnimation":true,"viewportShowSelectionMode":false,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowExpand":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"layoutShowLog":false}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowControls":false,"viewportShowExpand":true,"emdbProvider":"rcsb","layoutIsExpanded":false}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
@@ -182,8 +153,8 @@ PTPN11 amino acid sequence:
 </section>
 
  ]]></description>
-  <guid>https://www.idevillasante.com/posts/mutagenesis/ptpn11.html</guid>
-  <pubDate>Thu, 22 Dec 2022 16:32:31 GMT</pubDate>
+  <guid>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</guid>
+  <pubDate>Fri, 23 Dec 2022 10:45:44 GMT</pubDate>
 </item>
 </channel>
 </rss>
