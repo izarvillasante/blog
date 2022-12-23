@@ -5,22 +5,52 @@ date: "2022-12-22"
 categories: [news]
 ---
 
-This list should contain a series of topics related to modern data
-science working environment with R. You can expect posts about:
+This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:
 
--    running R and Rstudio in a remote and portable setup.
+And related to making your work \< F.A.I.R \>:
 
--    Setting up binder for running the scripts in your github repository
+-   Findable:
 
--   Use github actions to update rocker images containing rstudio server
-    and all the packages and dependencies that the code in your
-    repository needs to run.
+    -   How to publish your work (blog, book, revealjs presentations, webpages, github, CRAN/bioconductor)
 
--   Working in remote with rstudio.
+-   Accessible:
 
--    Quarto notebooks
+    -   How to manage access to your work and how to access it using api.
 
-Below is a presentation with some of the main concepts that inspired this series. 
+-   Interoperable:
+
+```{=html}
+<!-- -->
+```
+    -   Make your work interact with other tools & programs.
+
+    -   Workflow languages (nextflow, targets...)
+
+    -   YAML language and parameters.
+
+    -   Quarto extensions
+
+-   Reproducible:
+
+    1.  Running R and Rstudio from anywhere with any computer, at any time.
+
+        -   Using and customising rocker-project containers.
+
+        -   Setting up binder to start developing right from your github repository.
+
+        -   Using github registry to store your docker/singularity containers.
+
+    2.  DevOps principles and practices for bioinformatics.
+
+        -   Automatically install new packages with renv and github actions
+
+        -   Set up a CI system with github actions and github registry to keep your work ready for publication/packaging
+
+        -   Metadata & best practices for coding.
+
+
+Below is a presentation with some of the main concepts that inspired this series.
+
 
 <div>
 

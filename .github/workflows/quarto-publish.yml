@@ -37,6 +37,7 @@ jobs:
           packages: |
             any::rmarkdown
             any::terra
+            any::bspm
       - uses: r-lib/actions/setup-renv@v2    
       # Publish:
       - name: Publish to GitHub Pages (and render)
