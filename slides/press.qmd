@@ -1,11 +1,12 @@
 ---
-title: "FAIR Bioinformatics slides"
+title: "FAIR Bioinformatics"
 subtitle: "Bioinformatic talks 14/12/2022"
 author: "Izar de Villasante"
 toc: false
 format:
   revealjs:
-    embed-resources: true
+    chalkboard: true
+    # embed-resources: true
     slide-number: true
     width: 780
     height: 500
