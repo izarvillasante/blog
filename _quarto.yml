@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: makeslides.R
 
 website:
   title: "Izar de Villasante"

@@ -5,8 +5,8 @@ author: "Izar de Villasante"
 toc: false
 format:
   revealjs:
-    chalkboard: true
-    # embed-resources: true
+    # chalkboard: true
+    embed-resources: true
     slide-number: true
     width: 780
     height: 500
@@ -15,9 +15,10 @@ format:
     preview-links: auto
     
 
-resources:
-  - fairprinciplespaper.pdf
-  - images/
+# resources:
+#   - fairprinciplespaper.pdf
+#   - images/
+  
 execute:
   cache: false
 
