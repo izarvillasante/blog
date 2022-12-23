@@ -6,20 +6,20 @@
       version="2.0">
 <channel>
 <title>Izar de Villasante</title>
-<link>https://github.com/izarvillasante/blog/Blog.html</link>
-<atom:link href="https://github.com/izarvillasante/blog/Blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://izarvillasante.github.io/blog/Blog.html</link>
+<atom:link href="https://izarvillasante.github.io/blog/Blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.2.280</generator>
+<generator>quarto-1.3.26</generator>
 <lastBuildDate>Thu, 22 Dec 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>FAIR Data Science</title>
   <dc:creator>Izar de Villasante</dc:creator>
-  <link>https://github.com/izarvillasante/blog/posts/FAIR/index.html</link>
+  <link>https://izarvillasante.github.io/blog/posts/FAIR/index.html</link>
   <description><![CDATA[ 
 
 
 
-<p>This list should contain a series of topics related to modern data science working environment with R. You can expect posts related to making your work &lt; F.A.I.R &gt;:</p>
+<p>This list should contain a series of topics related to modern data science working environment with R. You can expect posts related to making your work FAIR:</p>
 <ul>
 <li><p>Findable:</p>
 <ul>
@@ -61,13 +61,13 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://github.com/izarvillasante/blog/posts/FAIR/index.html</guid>
+  <guid>https://izarvillasante.github.io/blog/posts/FAIR/index.html</guid>
   <pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Post With Code</title>
   <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://github.com/izarvillasante/blog/posts/post-with-code/index.html</link>
+  <link>https://izarvillasante.github.io/blog/posts/post-with-code/index.html</link>
   <description><![CDATA[ 
 
 
@@ -86,34 +86,34 @@
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://github.com/izarvillasante/blog/posts/post-with-code/index.html</guid>
+  <guid>https://izarvillasante.github.io/blog/posts/post-with-code/index.html</guid>
   <pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/izarvillasante/blog/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://izarvillasante.github.io/blog/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Izar</dc:creator>
-  <link>https://github.com/izarvillasante/blog/posts/welcome/index.html</link>
+  <link>https://izarvillasante.github.io/blog/posts/welcome/index.html</link>
   <description><![CDATA[ 
 
 
 
 <p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://github.com/izarvillasante/blog/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p><img src="https://izarvillasante.github.io/blog/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
 
 
  ]]></description>
   <category>news</category>
-  <guid>https://github.com/izarvillasante/blog/posts/welcome/index.html</guid>
+  <guid>https://izarvillasante.github.io/blog/posts/welcome/index.html</guid>
   <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/izarvillasante/blog/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://izarvillasante.github.io/blog/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>PTPN11 mutagenesis</title>
   <dc:creator>Izar de Villasante</dc:creator>
-  <link>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</link>
+  <link>https://izarvillasante.github.io/blog/posts/mutagenesis/ptpn11.html</link>
   <description><![CDATA[ 
 
 
@@ -161,14 +161,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"viewportShowExpand":true,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"viewportShowAnimation":true,"layoutShowLog":false,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowSelectionMode":false,"layoutShowRemoteState":false,"layoutShowControls":false}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"emdbProvider":"rcsb","layoutIsExpanded":false,"viewportShowAnimation":true,"pdbProvider":"rcsb","viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowLeftPanel":true,"viewportShowExpand":true,"layoutShowSequence":false,"layoutShowControls":false,"layoutShowRemoteState":false}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"viewportShowExpand":true,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"viewportShowAnimation":true,"layoutShowLog":false,"layoutShowSequence":false,"emdbProvider":"rcsb","pdbProvider":"rcsb","viewportShowSelectionMode":false,"layoutShowRemoteState":false,"layoutShowControls":false}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"emdbProvider":"rcsb","layoutIsExpanded":false,"viewportShowAnimation":true,"pdbProvider":"rcsb","viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowLeftPanel":true,"viewportShowExpand":true,"layoutShowSequence":false,"layoutShowControls":false,"layoutShowRemoteState":false}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
@@ -178,8 +178,8 @@ PTPN11 amino acid sequence:
 </section>
 
  ]]></description>
-  <guid>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</guid>
-  <pubDate>Fri, 23 Dec 2022 17:26:58 GMT</pubDate>
+  <guid>https://izarvillasante.github.io/blog/posts/mutagenesis/ptpn11.html</guid>
+  <pubDate>Fri, 23 Dec 2022 17:31:24 GMT</pubDate>
 </item>
 </channel>
 </rss>
