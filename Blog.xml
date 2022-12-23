@@ -161,14 +161,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"layoutShowSequence":false,"layoutShowLog":false,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowControls":false,"pdbProvider":"rcsb","viewportShowAnimation":true,"layoutShowRemoteState":false,"viewportShowExpand":true}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"viewportShowExpand":true,"layoutShowRemoteState":false,"emdbProvider":"rcsb","layoutIsExpanded":false,"pdbProvider":"rcsb","layoutShowControls":false,"layoutShowSequence":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"layoutShowLog":false,"viewportShowAnimation":true}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"layoutShowSequence":false,"layoutShowLog":false,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowControls":false,"pdbProvider":"rcsb","viewportShowAnimation":true,"layoutShowRemoteState":false,"viewportShowExpand":true}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"viewportShowExpand":true,"layoutShowRemoteState":false,"emdbProvider":"rcsb","layoutIsExpanded":false,"pdbProvider":"rcsb","layoutShowControls":false,"layoutShowSequence":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"layoutShowLog":false,"viewportShowAnimation":true}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
@@ -179,7 +179,7 @@ PTPN11 amino acid sequence:
 
  ]]></description>
   <guid>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</guid>
-  <pubDate>Fri, 23 Dec 2022 18:59:28 GMT</pubDate>
+  <pubDate>Fri, 23 Dec 2022 19:08:37 GMT</pubDate>
 </item>
 </channel>
 </rss>
