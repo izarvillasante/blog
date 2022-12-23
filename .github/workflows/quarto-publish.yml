@@ -20,7 +20,7 @@ jobs:
         #   # version: 0.9.600
       - name: Install quarto extenisons
         run: |
-          quarto add extension quarto-ext/fontawesome --no-prompt
+          quarto install extension quarto-ext/fontawesome --no-prompt
           quarto install extension jmbuhr/quarto-molstar --no-prompt
           quarto add jmbuhr/quarto-molstar --no-prompt
       # 
