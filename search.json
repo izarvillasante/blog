@@ -4,7 +4,7 @@
     "href": "fair.html",
     "title": "Series: <F.A.I.R>",
     "section": "",
-    "text": "FAIR Data Science\n\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "FAIR Data Science\n\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "archive.html",
@@ -25,7 +25,7 @@
     "href": "Blog.html",
     "title": "Izar de Villasante",
     "section": "",
-    "text": "Series\n\n<F.A.I.R. series>\nThis series contains a great deal of tips, tricks and packages that you can use to take your data science to the next level with FAIR development practices.\n\n“Fair means everyone gets what they need. And the only way to get what you need is to make it happen yourself.” – Rick Riordan\n\n\n\n\nSeries\n\nmutagenesis\nThis series explores the bioinformatic tools applied to mutagenesis. It includes quite awesome extension molstar.\n\n\n\n\n\n\n\nSubscribe\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPTPN11 mutagenesis\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nFAIR Data Science\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Series\n\n<F.A.I.R. series>\nThis series contains a great deal of tips, tricks and packages that you can use to take your data science to the next level with FAIR development practices.\n\n“Fair means everyone gets what they need. And the only way to get what you need is to make it happen yourself.” – Rick Riordan\n\n\n\n\nSeries\n\nmutagenesis\nThis series explores the bioinformatic tools applied to mutagenesis. It includes quite awesome extension molstar.\n\n\n\n\n\n\n\nSubscribe\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPTPN11 mutagenesis\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nFAIR Data Science\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2022\n\n\n1 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nNov 25, 2022\n\n\n0 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -53,7 +53,7 @@
     "href": "posts/FAIR/index.html",
     "title": "FAIR Data Science",
     "section": "",
-    "text": "This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:\n\nrunning R and Rstudio in a remote and portable setup.\nSetting up binder for running the scripts in your github repository\nUse github actions to update rocker images containing rstudio server and all the packages and dependencies that the code in your repository needs to run.\nWorking in remote with rstudio.\nQuarto notebooks\n\nBelow is a presentation with some of the main concepts that inspired this series."
+    "text": "This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:\nAnd related to making your work < F.A.I.R >:\n\nFindable:\n\nHow to publish your work (blog, book, revealjs presentations, webpages, github, CRAN/bioconductor)\n\nAccessible:\n\nHow to manage access to your work and how to access it using api.\n\nInteroperable:\n\nMake your work interact with other tools & programs.\nWorkflow languages (nextflow, targets…)\nYAML language and parameters.\nQuarto extensions\n\nReproducible:\n\nRunning R and Rstudio from anywhere with any computer, at any time.\n\nUsing and customising rocker-project containers.\nSetting up binder to start developing right from your github repository.\nUsing github registry to store your docker/singularity containers.\n\nDevOps principles and practices for bioinformatics.\n\nAutomatically install new packages with renv and github actions\nSet up a CI system with github actions and github registry to keep your work ready for publication/packaging\nMetadata & best practices for coding.\n\n\n\nBelow is a presentation with some of the main concepts that inspired this series."
   },
   {
     "objectID": "index.html",

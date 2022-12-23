@@ -20,12 +20,38 @@
 
 
 <p>This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:</p>
+<p>And related to making your work &lt; F.A.I.R &gt;:</p>
 <ul>
-<li><p>running R and Rstudio in a remote and portable setup.</p></li>
-<li><p>Setting up binder for running the scripts in your github repository</p></li>
-<li><p>Use github actions to update rocker images containing rstudio server and all the packages and dependencies that the code in your repository needs to run.</p></li>
-<li><p>Working in remote with rstudio.</p></li>
-<li><p>Quarto notebooks</p></li>
+<li><p>Findable:</p>
+<ul>
+<li>How to publish your work (blog, book, revealjs presentations, webpages, github, CRAN/bioconductor)</li>
+</ul></li>
+<li><p>Accessible:</p>
+<ul>
+<li>How to manage access to your work and how to access it using api.</li>
+</ul></li>
+<li><p>Interoperable:</p>
+<ul>
+<li><p>Make your work interact with other tools &amp; programs.</p></li>
+<li><p>Workflow languages (nextflow, targets…)</p></li>
+<li><p>YAML language and parameters.</p></li>
+<li><p>Quarto extensions</p></li>
+</ul></li>
+<li><p>Reproducible:</p>
+<ol type="1">
+<li><p>Running R and Rstudio from anywhere with any computer, at any time.</p>
+<ul>
+<li><p>Using and customising rocker-project containers.</p></li>
+<li><p>Setting up binder to start developing right from your github repository.</p></li>
+<li><p>Using github registry to store your docker/singularity containers.</p></li>
+</ul></li>
+<li><p>DevOps principles and practices for bioinformatics.</p>
+<ul>
+<li><p>Automatically install new packages with renv and github actions</p></li>
+<li><p>Set up a CI system with github actions and github registry to keep your work ready for publication/packaging</p></li>
+<li><p>Metadata &amp; best practices for coding.</p></li>
+</ul></li>
+</ol></li>
 </ul>
 <p>Below is a presentation with some of the main concepts that inspired this series.</p>
 <div>
@@ -136,14 +162,14 @@ PTPN11 amino acid sequence:
 <p>So, it is quite difficult to get anything from those. Let’s take a look into its 3D structure:</p>
     <div id="app-3B7O" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-3B7O", {"viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowControls":false,"viewportShowExpand":true,"emdbProvider":"rcsb","layoutIsExpanded":false}).then(viewer => {
+    molstar.Viewer.create("app-3B7O", {"viewportShowExpand":true,"layoutShowLog":false,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"layoutShowControls":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"viewportShowSelectionMode":false,"pdbProvider":"rcsb","viewportShowAnimation":true,"layoutShowSequence":false}).then(viewer => {
     viewer.loadPdb("3B7O");    });
     </script>
     
 <p>We can also take a look in the <a href="https://alphafold.com/">AlphaFold Database</a> to compare the wild type structure to the mutants.</p>
     <div id="app-Q96I26" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-Q96I26", {"viewportShowSelectionMode":false,"layoutShowLog":false,"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowLeftPanel":true,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowControls":false,"viewportShowExpand":true,"emdbProvider":"rcsb","layoutIsExpanded":false}).then(viewer => {
+    molstar.Viewer.create("app-Q96I26", {"viewportShowExpand":true,"layoutShowLog":false,"layoutShowLeftPanel":true,"layoutIsExpanded":false,"layoutShowControls":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"viewportShowSelectionMode":false,"pdbProvider":"rcsb","viewportShowAnimation":true,"layoutShowSequence":false}).then(viewer => {
     viewer.loadAlphaFoldDb(afdb="Q96I26")    });
     </script>
     
@@ -154,7 +180,7 @@ PTPN11 amino acid sequence:
 
  ]]></description>
   <guid>https://github.com/izarvillasante/blog/posts/mutagenesis/ptpn11.html</guid>
-  <pubDate>Fri, 23 Dec 2022 10:45:44 GMT</pubDate>
+  <pubDate>Fri, 23 Dec 2022 16:52:54 GMT</pubDate>
 </item>
 </channel>
 </rss>
