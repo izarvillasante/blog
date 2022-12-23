@@ -5,9 +5,7 @@ date: "2022-12-22"
 categories: [news]
 ---
 
-This list should contain a series of topics related to modern data science working environment with R. You can expect posts about:
-
-And related to making your work \< F.A.I.R \>:
+This list should contain a series of topics related to modern data science working environment with R. You can expect posts related to making your work \< F.A.I.R \>:
 
 -   Findable:
 
@@ -54,5 +52,3 @@ Below is a presentation with some of the main concepts that inspired this series
 ```
 
 </div>
-
-
