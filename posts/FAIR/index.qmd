@@ -19,9 +19,6 @@ And related to making your work \< F.A.I.R \>:
 
 -   Interoperable:
 
-```{=html}
-<!-- -->
-```
     -   Make your work interact with other tools & programs.
 
     -   Workflow languages (nextflow, targets...)
@@ -48,9 +45,7 @@ And related to making your work \< F.A.I.R \>:
 
         -   Metadata & best practices for coding.
 
-
 Below is a presentation with some of the main concepts that inspired this series.
-
 
 <div>
 
@@ -59,3 +54,5 @@ Below is a presentation with some of the main concepts that inspired this series
 ```
 
 </div>
+
+
